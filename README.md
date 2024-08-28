@@ -42,7 +42,7 @@
     myCar.StartEngine();
     ```
   - **Giải Thích**:
-    - 'myCar' là một đối tượng của lớp 'Car'. Nó có các giá trị cụ thể cho 'Brand', 'Model', và 'Year', và nó có thể thực hiện hành vi 'StartEngine'.
+    - `myCar` là một đối tượng của lớp `Car`. Nó có các giá trị cụ thể cho `Brand`, `Model`, và `Year`, và nó có thể thực hiện hành vi `StartEngine`.
 ## 3. Tính đóng gói (Encapsulation)
 
 ### Lý thuyết:
@@ -75,7 +75,7 @@ public class BankAccount
 }
 ```
 - **Giải Thích**:
-  - Trường 'balance' là 'private', có nghĩa là nó chỉ có thể được truy cập trong lớp 'BankAccount'. Phương thức 'Deposit' cho phép điều chỉnh 'balance' một cách có kiểm soát, và 'GetBalance' cung cấp truy cập có kiểm soát đến giá trị của nó.
+  - Trường `balance` là `private`, có nghĩa là nó chỉ có thể được truy cập trong lớp `BankAccount`. Phương thức `Deposit` cho phép điều chỉnh `balance` một cách có kiểm soát, và `GetBalance` cung cấp truy cập có kiểm soát đến giá trị của nó.
 ## 4. Kế thừa (Inheritance)
 
 ### Lý thuyết:
@@ -101,8 +101,8 @@ public class Dog : Animal
 }
 ```
 - **Giải Thích**:
-  - 'Animal' là một lớp cơ bản với thuộc tính 'Name' và phương thức 'Eat'.
-  - 'Dog' là một lớp dẫn xuất kế thừa thuộc tính 'Name' và phương thức 'Eat' từ lớp 'Animal'. Lớp 'Dog' cũng thêm phương thức 'Bark' riêng của nó.
+  - `Animal` là một lớp cơ bản với thuộc tính `Name` và phương thức `Eat`.
+  - `Dog` là một lớp dẫn xuất kế thừa thuộc tính `Name` và phương thức `Eat` từ lớp `Animal`. Lớp `Dog` cũng thêm phương thức `Bark` riêng của nó.
 ## 5. Tính đa hình (Polymorphism)
 
 ### Lý thuyết:
@@ -126,8 +126,8 @@ public class Calculator
 }
 ```
 - **Giải Thích**: Phương thức Add được nạp chồng với hai phiên bản
-  - Một phiên bản nhận hai số nguyên ('int').
-  - Một phiên bản nhận hai số thực ('double').
+  - Một phiên bản nhận hai số nguyên (`int`).
+  - Một phiên bản nhận hai số thực (`double`).
 
 ### Ghi đè phương thức:
 Ghi đè phương thức cho phép một lớp dẫn xuất cung cấp một triển khai cụ thể của phương thức đã được định nghĩa trong lớp cơ bản.
@@ -150,8 +150,8 @@ public class Dog : Animal
 }
 ```
 - **Giải Thích**:
-  - Phương thức 'Speak' trong lớp 'Animal' được đánh dấu là 'virtual', cho phép các lớp dẫn xuất ghi đè phương thức này.
-  - Lớp 'Dog' ghi đè phương thức 'Speak' của lớp 'Animal', cung cấp một triển khai cụ thể cho lớp 'Dog'.
+  - Phương thức `Speak` trong lớp `Animal` được đánh dấu là `virtual`, cho phép các lớp dẫn xuất ghi đè phương thức này.
+  - Lớp `Dog` ghi đè phương thức `Speak` của lớp `Animal`, cung cấp một triển khai cụ thể cho lớp `Dog`.
 
 ## 6. Tính trừu tượng (Abstraction)
 
@@ -176,7 +176,7 @@ public class Circle : Shape
 }
 ```
 - **Giải Thích**:
-  - Lớp 'Shape' là một lớp trừu tượng với phương thức trừu tượng 'GetArea'. Lớp 'Circle' kế thừa từ 'Shape' và cung cấp triển khai của riêng nó cho phương thức 'GetArea'.
+  - Lớp `Shape` là một lớp trừu tượng với phương thức trừu tượng `GetArea`. Lớp `Circle` kế thừa từ `Shape` và cung cấp triển khai của riêng nó cho phương thức `GetArea`.
 ### Ví dụ về Giao diện:
 ```csharp
 public interface IMovable
@@ -193,7 +193,7 @@ public class Car : IMovable
 }
 ```
 - **Giải Thích**:
-  - Giao diện 'IMovable' định nghĩa phương thức 'Move'. Lớp 'Car' triển khai giao diện này và cung cấp triển khai cụ thể của phương thức 'Move'.
+  - Giao diện `IMovable` định nghĩa phương thức `Move`. Lớp `Car` triển khai giao diện này và cung cấp triển khai cụ thể của phương thức `Move`.
  
 ## 7. Bài tập tự luyện
 - **Bài Tập 1**: Tạo lớp Person với các trường private cho tên, tuổi và email. Triển khai các phương thức công khai để thiết lập và lấy giá trị của các trường này. Tạo một lớp kế thừa Student, thêm trường studentID và phương thức để hiển thị thông tin sinh viên.
